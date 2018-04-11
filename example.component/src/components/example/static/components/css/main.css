@@ -1,0 +1,221 @@
+.periodic{
+	position: relative;
+	height: 200px;
+	margin-right: -1px;
+	text-shadow: none;
+	margin-top: 60px;
+}
+.periodic-row{
+	clear: both;
+	height: 9%;
+}
+.cell{
+	float: left;
+	position: relative;
+	width: 5.4%;
+	height: 100%;
+}
+.period_cell{
+	float: left;
+	position: relative;
+	width: 2.5%;
+	height: 100%;
+}
+.period, .group{
+	font-size: 6px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 1px;
+	right: 1px;
+	box-sizing: border-box;
+	border: 0;
+	cursor: default;
+	color: rgb(71, 71, 71);
+	-webkit-transition: all 200ms ease;
+	        transition: all 200ms ease;
+	background-color: rgb(255, 255, 255);
+}
+.period{
+	text-align: right;
+	margin-top: 90%;
+	margin-right: 20%;
+}
+
+.group{
+	text-align: center;
+	margin-top: 25%;
+}
+.element{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 1px;
+	right: 1px;
+	box-sizing: border-box;
+	box-shadow: 0 0 4px rgba(255, 255, 255, .5);
+	border: 1px solid rgba(0, 0, 0, .05);
+	text-align: center;
+	cursor: default;
+	/* pointer-events: none; */
+	-webkit-transition: all 200ms ease;
+	        transition: all 200ms ease;
+	background-color: rgba(255, 255, 255, .6);
+}
+
+.at_num, .at_details{
+	position: absolute;
+	font-size: 4px;
+	color: rgba(255, 255, 255, .5);
+	opacity: 0;
+	pointer-events: none;
+}
+.at_num{
+	top: 4px;
+	right: 5px;
+	pointer-events: none;
+}
+.symbol{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin-top: -4px;
+	font-size: 9px;
+	line-height: 1;
+	height: 9px;
+	color: rgba(255, 255, 255, .9);
+	pointer-events: none;
+}
+.at_details{
+	bottom: 4px;
+	left: 0;
+	right: 0;
+}
+.cell .element.noble_gas{
+	background-color: rgb(0, 198, 212);
+}
+.cell .element.diatomic_nonmetal{
+	background-color: rgb(73, 255, 73);
+}
+.cell .element.alkali_metal{
+	background-color: rgb(255, 70, 70);
+}
+.cell .element.alkaline_earth_metal{
+	background-color: rgb(250, 183, 96);
+}
+.cell .element.metalloid{
+	background-color: rgb(165, 111, 49);
+}
+.cell .element.polyatomic_nonmetal{
+	background-color: rgb(73, 255, 73);
+}
+.cell .element.post_transition_metal{
+	background-color: rgb(138, 163, 192);
+}
+.cell .element.transition_metal{
+	background-color: rgb(204, 128, 200);
+}
+.cell .element.lanthanide{
+	background-color: rgb(255, 123, 134);
+}
+.cell .element.actinide{
+	background-color: rgb(197, 36, 71);
+}
+.cell .element.halogen{
+	background-color: rgb(236, 221, 4);
+}
+.cell .element:hover{
+	background-color: rgb(126, 126, 126);
+}
+@media (min-width: 600px){
+	.periodic{
+		height: 460px;
+		margin-right: -2px;
+	}
+	.element{
+		right: 2px;
+		bottom: 2px;
+	}
+	.at_num, .at_details{
+		opacity: 1;
+	}
+	.at_num{
+		font-size: 4px;
+	}
+	.at_details{
+		font-size: 6px;
+	}
+	.symbol{
+		margin-top: -17px;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 30px;
+		height: 30px;
+		color: rgba(255, 255, 255, .75);
+		text-shadow: 0 0 4px rgba(255, 255, 255, .5);
+	}
+	.period, .group{
+		font-size: 8px;
+	}
+	.group{
+		margin-top: 65%;
+	}
+}
+@media (min-width: 800px){
+	.periodic{
+		height: 620px;
+	}
+	.symbol{
+		font-size: 20px;
+	}
+	.period, .group{
+		font-size: 10px;
+	}
+	.group{
+		margin-top: 70%;
+	}
+	.at_num{
+		font-size: 8px;
+	}
+	.at_details{
+		font-size: 6px;
+	}
+}
+@media (min-width: 992px){
+	.periodic{
+		height: 760px;
+	}
+	.symbol{
+		font-size: 14px;
+	}
+	.at_num{
+		font-size: 10px;
+	}
+	.at_details{
+		font-size: 8px;
+	}
+	.group{
+		margin-top: 80%;
+	}
+}
+@media (min-width: 1200px){
+	.periodic{
+		height: 880px;
+	}
+	.at_num{
+		font-size: 14px;
+	}
+	.at_details{
+		font-size: 12px;
+	}
+	.symbol{
+		font-size: 20px;
+	}
+	.period, .group{
+		font-size: 14px;
+	}
+	.group{
+		margin-top: 80%;
+	}
+}

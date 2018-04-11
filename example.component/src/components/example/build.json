@@ -1,0 +1,13 @@
+{
+     "sources": [
+        
+        "src/example-common.js",        
+	"src/table.js",
+	"src/ptmap.js"
+
+    ],
+
+    "component": "src/example-component.js",
+
+    "target": "static/components/js/example/example.js"
+}
